@@ -1,0 +1,278 @@
+
+/*-estilo div pincipal----*/
+.div_principal{
+	width:1200px;
+	margin: 0 auto;
+	height:100%;
+	background-color:#DDE8F3;
+
+	
+	
+	
+	
+}
+	
+
+
+
+
+.cont_img{float:left;
+width:400px;
+margin-top:-15px;
+}
+
+.cont_menu{float:left;
+          
+ }
+.menu{
+	 float:left;
+	 border:solid: 1px #000000;
+	 background-color:#000000;
+	 padding:1;
+	 width:580px;
+	 height:12px;
+	 border-bottom-left-radius:1px;/*ERAN15*/
+	 border-bottom-right-radius:1px;
+	 
+	 text-decoration:none;
+	 
+	 margin-top:0px}
+
+.menu .aaa{
+	align-content: space-around;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+	font-size: 20px 40px;
+	 border-style:groove;
+	float:left;
+	width:100px;
+	
+	 border-right:solid 1px #000;
+	 
+	 padding:8px 15px 5px 15px;
+	 text-decoration:none;
+	 text-align:center;	
+	 
+	
+	
+	 }
+	 
+	 
+	 .menu .aaa .link{text-decoration:none; color:#000; }
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	  .menu .aaa:hover{
+		  background-color:#0B52F8;
+	  }
+	  .txt2{color:#1181F8; text-decoration:none; }
+	  	  .txt2.link{color:#1181F8; text-decoration:none; }
+	  .cont_txt{margin-top:-100px;margin-left:70px;}
+	  
+	  .td2{
+	 align-content: space-around;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+	font-size: 14px;
+	
+	float:center;
+	width:100px;
+	
+	 border-right:solid 1px #000;
+	 border-left:solid 1px #000;
+	 
+	 padding:4px 155px 2px 105px;
+	 text-decoration:none;
+	 text-align:center;
+	 background:#385E5A;
+	 color:#FBFBFB;
+	 }
+	 
+	 .td2:hover{
+		  background-color:#000;
+	  }
+	 
+	 
+	 /*menu2-------*/
+	 
+	  /*menu 2*/
+	 
+	 .menu2{
+	 float:center;
+	 border:solid: 1px #000000;
+	 background-color:#FFFFFF;
+	 padding:1;
+	 width:740px;
+	 height:60px;
+	 border-bottom-left-radius:15px;
+	 border-bottom-right-radius:15px;
+	 text-decoration:none;
+	 
+	 margin-top:0px;
+	 margin-left:225px;
+
+	 
+	 
+	
+	   }
+
+.menu2 .aaa{
+	font-size: 17px;
+	align-content: space-around;	
+	float:left;
+	width:100px;	
+	 border-right:solid 15px #FFF;	 
+	 padding:8px 15px 5px 15px;
+	 text-decoration:none;
+	 text-align:center;	
+	 list-style:none;
+	 
+	 
+	
+	
+	 }
+	 
+	 
+	
+
+ /*menu2 aaa link*/
+	 .menu2 .aaa .link{text-decoration:none;  color:#000; }
+	/* fin menu2 aaa link*/ 
+		 
+	 
+	 
+	 
+	 
+	 
+	 
+	  .menu2 .aaa:hover{
+		  background-color:#DDDDD3;
+	  }
+	 /*fin menu2------*/
+	 
+	 
+	 
+	 	#menu_container { 
+  width: 1000px;
+  margin: 0 auto 0 auto;
+}
+
+html body ul.sf-menu ul,html body ul.sf-menu ul li { 
+  width: 220px;
+}
+
+html body ul.sf-menu ul ul { 
+  margin: 0 0 0 220px;
+}
+
+/* Framework for proper showing/hiding/positioning */
+ul.sf-menu,ul.sf-menu * { 
+  margin: 0;
+  padding: 0;
+}
+
+ul.sf-menu { 
+  display: block;
+  position: relative;
+}
+  
+ul.sf-menu li { 
+  display: block;
+  list-style: none;
+  float: left;
+  position: relative;
+}
+  
+ul.sf-menu li:hover { 
+  visibility: inherit; /* fixes IE7 'sticky bug' */ 
+}
+
+ul.sf-menu a { 
+  display: block;
+  position: relative;
+}
+  
+ul.sf-menu ul { 
+  position: absolute;
+  left: 0;
+  width: 150px; 
+  top: auto;
+  left: -999999px;
+}
+  
+ul.sf-menu ul a { 
+  zoom: 1; /* IE6/7 fix */ 
+}
+
+ul.sf-menu ul li { 
+  float: left; /* Must always be floated otherwise there will be a rogue 1px margin-bottom in IE6/7 */
+  width: 150px;
+}
+  
+ul.sf-menu ul ul { 
+  top: 0;
+  margin: 0 0 0 150px;
+}
+
+ul.sf-menu li:hover ul,ul.sf-menu li:focus ul,ul.sf-menu li.sf-hover ul, 
+ul.sf-menu ul li:hover ul,ul.sf-menu ul li:focus ul,ul.sf-menu ul li.sf-hover ul,
+ul.sf-menu ul ul li:hover ul,ul.sf-menu ul ul li:focus ul,ul.sf-menu ul ul li.sf-hover ul,
+ul.sf-menu ul ul ul li:hover ul,ul.sf-menu ul ul ul li:focus ul,ul.sf-menu ul ul ul li.sf-hover ul { 
+  left: auto;
+}
+  
+ul.sf-menu li:hover ul ul,ul.sf-menu li:focus ul ul,ul.sf-menu li.sf-hover ul ul,
+ul.sf-menu ul li:hover ul ul,ul.sf-menu ul li:focus ul ul,ul.sf-menu ul li.sf-hover ul ul,
+ul.sf-menu ul ul li:hover ul ul,ul.sf-menu ul ul li:focus ul ul,ul.sf-menu ul ul li.sf-hover ul ul,
+ul.sf-menu ul ul ul li:hover ul ul,ul.sf-menu ul ul ul li:focus ul ul,ul.sf-menu ul ul ul li.sf-hover ul ul { 
+  left: -999999px;
+}
+#menu_container { 
+  width: 1000px;
+  margin: 0 auto 0 auto;
+}
+
+article, aside, figure, footer, header, hgroup, nav, section { 
+  display:block;
+}
+
+nav { 
+  height: 44px;
+  width: 1000px;
+  margin: -44px auto 0 auto;
+  color: #fef4e9;
+ /* background: transparent url(menubar.png);*/
+  border-radius: 7px 7px 0px 0px;
+  -moz-border-radius: 7px 7px 0px 0px;
+  -webkit-border: 7px 7px 0px 0px; 
+} 
+
+
+/* Theming the menu */
+ul#nav { 
+  float: left;
+}
+
+ul#nav ul { 
+  background: #00ffcb;
+  margin-top: 5px;
+  padding-bottom: 15px;
+}
+
+ul#nav li a { 
+  padding:5px 20px 6px 20px;
+  font: 150% 'News Cycle', arial, sans-serif;
+  text-shadow: 1px 1px #294701;
+  text-decoration: none;
+  color:#FFF;
+  margin-right: 2px;
+}
+
+ul#nav li a:hover,ul#nav li a:focus { 
+  color: #FFF;
+  text-decoration: underline;
+}

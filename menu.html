@@ -1,0 +1,279 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>SES</title>
+<link rel="StyleSheet" href="sesmenu.css" type="text/css">
+<style>
+	 
+</style>
+
+<script type="text/javascript" src="zepto.min.js" > </script>
+<script>var cont=0;</script>
+ <script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
+<script type="text/javascript">
+/*
+cont_img
+cont_txt_tema
+cont_txt_texto
+*/
+//var img=document.getElementById('cont_im');
+//var tema=document.getElementById('cont_txt_tema');
+//var texto=document.getElementById('cont_txt_texto');
+	
+function DD()
+{
+
+   CC(cont);
+	
+	cont=cont+1;
+	if(cont>2){cont=0;}
+}
+
+
+function CC(num)
+{
+	var img=document.getElementById('cont_im');
+var tema=document.getElementById('cont_txt_tema');
+var texto=document.getElementById('cont_txt_texto');
+
+var im1=document.getElementById('img1');
+var im2=document.getElementById('img2');
+var im3=document.getElementById('img3');
+	contt=num;
+	//img=$("#cont_img");
+	if(contt==0){
+	//alert('entro al dd');
+	img.src='img5.png';
+	
+	//alert('paso img');
+	
+	tema.innerHTML="Servicio";
+	
+//	alert('paso tema');
+	
+	texto.innerHTML="A la vanguardia con sistemas de Videovigilancia y CCTV ofreciendo el mejor servicio<br>de seguridad como ser con vigilantes, los cuales le ofrecen el servicio 24 o 12 horas a opcion del<br> cliente, ademas de los diversos sistemas de monitoreo, movimiento y mas<br><a href='Contactanos.php' class='link'><h2>Contactenos para mas informacion</h2></a>";
+	im1.src='circulo2.png';
+	im2.src='circulo.png';
+	im3.src='circulo.png';
+//	alert('paso texto');
+	}//fin if 0
+	
+	if(contt==1){
+//	alert('entro al dd');
+	img.src='img3.png';
+	
+	//alert('paso img');
+	
+	tema.innerHTML='Ofrecemos';
+	
+//	alert('paso tema');
+	
+	texto.innerHTML="Lo ultimo en tecnologia de seguridad con sistemas de excelente calidad,<br> teniendonos al tanto de los lugares que protegemos, sistemas que pueden formar <br>parte de tu vida para proteger su bienestar<a href='Contactanos.php' class='link'><h2>Contactenos para mas informacion</h2></a>";
+	im1.src='circulo.png';
+	im2.src='circulo2.png';
+	im3.src='circulo.png';
+//	alert('paso texto');
+	}//fin if 1
+	
+	if(contt==2){
+	//alert('entro al dd');
+	img.src='img6.png';
+	
+	//alert('paso img');
+	
+
+	tema.innerHTML='Trabaje en confianza';
+	
+//	alert('paso tema');
+	
+	texto.innerHTML="SES brinda la mejor calidad y lo mejor en tecnologias de alarmas de seguridad, de<br> manera que sus perimetros de mayor importancia pueden estar asegurados<br> con nuestro servicios.<a href='Contactanos.php' class='link'><h2>Contactenos para mas informacion</h2></a>";
+	im1.src='circulo.png';
+	im2.src='circulo.png';
+	im3.src='circulo2.png';
+	//alert('paso texto');
+	}//fin if 2
+	
+	}//fin cc
+	
+	
+
+ 
+ 
+</script>
+
+<!-- Redireccionamiento Movil -->
+<script type="text/javascript">
+var device = navigator.userAgent
+
+if (device.match(/Iphone/i)|| device.match(/Ipod/i)|| device.match(/Android/i)|| device.match(/J2ME/i)|| device.match(/BlackBerry/i)|| device.match(/iPhone|iPad|iPod/i)|| device.match(/Opera Mini/i)|| device.match(/IEMobile/i)|| device.match(/Mobile/i)|| device.match(/Windows Phone/i)|| device.match(/windows mobile/i)|| device.match(/windows ce/i)|| device.match(/webOS/i)|| device.match(/palm/i)|| device.match(/bada/i)|| device.match(/series60/i)|| device.match(/nokia/i)|| device.match(/symbian/i)|| device.match(/HTC/i))
+{
+window.location = "movil/m.menu.html";
+
+}
+else
+{
+
+}</script>
+<!-- fin Redireccionamiento-->
+
+</head>
+
+<body bgcolor="#DDE8F3">
+
+
+
+<div class="div_principal" >
+
+<!--  de auqi-->
+
+<div style="background-color:#DDE8F3; float:left;">
+
+
+<div class="cont_menu">
+<!-- <ul class="menu"> -->
+
+<!-- Me gusta mas sin el menu de arriba solo dejalo en servicios pa mostrarlo-
+<li  class="aaa"><a href="menu.html" class="link">Principal</a></li>
+
+
+
+<li  class="aaa"><a href="Servicios.html" class="link">Servicios</a></li>
+
+<li  class="aaa"><a href="Productos.html" class="link">Productos</a></li>
+
+<li  class="aaa"><a href="Nosotros.html" class="link">Aserca de nosotros</a></li>
+
+-->
+
+<!--</ul>-->
+
+</div>
+
+
+
+
+
+
+
+
+
+</div><br>
+
+
+
+
+<!-- ata qui-->
+
+<div id="div_cont" style="border:solid 12px;">
+  
+
+  
+   <header>
+      <div id="logo">
+        <div id="logo_text">
+         
+        </div>
+      </div>
+	  
+	  
+      <nav>
+        <div id="menu_container">
+          <ul class="sf-menu" id="nav">
+            <li><a href="menu.html">Principal</a></li>
+             <li><a href="Servicios.html">Servicios</a>
+              <ul>
+                <li><a href="#">Vigilancia</a></li>
+                <li><a href="#">Monitoreo</a>
+                  <ul>
+                    <li><a href="#">Hogares</a></li>
+                    <li><a href="#">Celulares</a></li>
+                     </ul>
+                </li>
+                <li><a href="#">Seguridad privada</a></li>
+              </ul>
+            </li>
+			
+			 <li><a href="Productos.html">Productos</a>       </li>
+			
+            <li><a href="Nosotros.html">Nosotros</a></li>
+                
+                <li><a href="Contactanos.php">Contactanos</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+  
+  <div align="left" class="cont_img">
+    <p>
+	  <img src="img7.png" width="%100">
+    </p>
+    <br>      
+  </div>
+
+
+
+  <div id="cont_img" align="right">
+        <img id="cont_im" src="size.png">
+    <br><img id="img1" src="circulo.png" width="5%"  onClick="CC(0)" onMouseOver="CC(0)">
+        <img id="img2" src="circulo.png" width="5%" onClick="CC(1)" onMouseOver="CC(1)">
+        <img id="img3" src="circulo.png" width="5%" onClick="CC(2)" onMouseOver="CC(2)">
+  </div>
+ 
+ 
+       <div class="cont_txt" align="left">
+          <h2 id="cont_txt_tema" class="txt2">Tema</h2>
+          <div align="left" id="cont_txt_texto">
+		       .............
+		  </div>
+      </div>
+
+
+
+
+<div align="left"><br><br><br></div>
+<footer>
+<table align="center">
+ <tr >
+ 
+ <td class="td2"><h2>Siguenos en Facebook</h2> </td>
+ 
+  <td class="td2"><h2>Siguenos en Twitter<br></h2> </td>
+ 
+  <td class="td2" ><a href="Nosotros.html" style=" text-decoration:none; color:#FFF;"><h2>System Electronic Security</h2></a> </td>
+ 
+ </tr>
+ </table> 
+
+</footer>
+
+</div>
+
+<footer align="center">
+      
+      <p><a href="menu.html">Principal</a> | <a href="Servicios.html">Servicios</a> | <a href="Productos.html">Productos</a> | <a href="Nosotros.html">Nosotros</a> | <a href="Contactanos.php">Contactanos</a></p>
+      <p>Copyright &copy; 2014 SES</p>
+    </footer>
+
+</div>
+
+<script type="text/javascript">
+
+DD();
+setInterval(DD,3000); 
+</script>
+
+ <!-- javascript at the bottom for fast page loading -->
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/jquery.easing-sooper.js"></script>
+  <script type="text/javascript" src="js/jquery.sooperfish.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('ul.sf-menu').sooperfish();
+      $('.top').click(function() {$('html, body').animate({scrollTop:0}, 'fast'); return false;});
+    });
+  </script>
+  
+  
+</body>
+</html>

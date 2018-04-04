@@ -1,0 +1,269 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="../../../../xampp/htdocs/boilerplate.css" rel="stylesheet" type="text/css">
+<link href="../../../../xampp/htdocs/Untitled-2.css" rel="stylesheet" type="text/css">
+<!-- 
+To learn more about the conditional comments around the html tags at the top of the file:
+paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+
+Do the following if you're using your customized build of modernizr (http://www.modernizr.com/):
+* insert the link to your js here
+* remove the link below to the html5shiv
+* add the "no-js" class to the html tags at the top
+* you can also remove the link to respond.min.js if you included the MQ Polyfill in your modernizr build 
+-->
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="../../../../xampp/htdocs/respond.min.js"></script>
+
+
+<title>SES</title>
+<link rel="StyleSheet" href="m.sesmenucel.css" type="text/css">
+<style>
+	 
+</style>
+
+<script type="text/javascript" src="zepto.min.js" > </script>
+<script>var cont=0;</script>
+
+<script type="text/javascript">
+/*
+cont_img
+cont_txt_tema
+cont_txt_texto
+*/
+//var img=document.getElementById('cont_im');
+//var tema=document.getElementById('cont_txt_tema');
+//var texto=document.getElementById('cont_txt_texto');
+	
+function DD()
+{
+
+   CC(cont);
+	
+	cont=cont+1;
+	if(cont>2){cont=0;}
+}
+
+
+function CC(num)
+{
+	var img=document.getElementById('cont_im');
+var tema=document.getElementById('cont_txt_tema');
+var texto=document.getElementById('cont_txt_texto');
+
+var im1=document.getElementById('img1');
+var im2=document.getElementById('img2');
+var im3=document.getElementById('img3');
+	contt=num;
+	//img=$("#cont_img");
+	if(contt==0){
+	//alert('entro al dd');
+	img.src='img5.png';
+	
+	//alert('paso img');
+	
+	tema.innerHTML="Servicio";
+	
+//	alert('paso tema');
+	
+	texto.innerHTML="A la vanguardia con sistemas de Videovigilancia y CCTV ofreciendo el mejor servicio<br>de seguridad como ser con vigilantes, los cuales le ofrecen el servicio 24 o 12 horas a opcion del<br> cliente, ademas de los diversos sistemas de monitoreo, movimiento y mas<br><a href='Contactanos.html' class='link'><h2>Contactenos para mas informacion</h2></a>";
+	im1.src='circulo2.png';
+	im2.src='circulo.png';
+	im3.src='circulo.png';
+//	alert('paso texto');
+	}//fin if 0
+	
+	if(contt==1){
+//	alert('entro al dd');
+	img.src='img3.png';
+	
+	//alert('paso img');
+	
+	tema.innerHTML='Ofrecemos';
+	
+//	alert('paso tema');
+	
+	texto.innerHTML="Lo ultimo en tecnologia de seguridad con sistemas de excelente calidad,<br> teniendonos al tanto de los lugares que protegemos, sistemas que pueden formar <br>parte de tu vida para proteger su bienestar<a href='Contactanos.html' class='link'><h2>Contactenos para mas informacion</h2></a>";
+	im1.src='circulo.png';
+	im2.src='circulo2.png';
+	im3.src='circulo.png';
+//	alert('paso texto');
+	}//fin if 1
+	
+	if(contt==2){
+	//alert('entro al dd');
+	img.src='img6.png';
+	
+	//alert('paso img');
+	
+
+	tema.innerHTML='Trabaje en confianza';
+	
+//	alert('paso tema');
+	
+	texto.innerHTML="SES brinda la mejor calidad y lo mejor en tecnologias de alarmas de seguridad, de<br> manera que sus perimetros de mayor importancia pueden estar asegurados<br> con nuestro servicios.<a href='Contactanos.html' class='link'><h2>Contactenos para mas informacion</h2></a>";
+	im1.src='circulo.png';
+	im2.src='circulo.png';
+	im3.src='circulo2.png';
+	//alert('paso texto');
+	}//fin if 2
+	
+	}//fin cc
+	
+	
+
+ 
+ 
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+<div class="gridContainer clearfix">
+
+
+
+<div class="div_principal" >
+
+<!--  de auqi-->
+
+<div style="background-color:#DDE8F3; float:left;">
+
+
+<div class="cont_menu">
+<!-- <ul class="menu"> -->
+
+<!-- Me gusta mas sin el menu de arriba solo dejalo en servicios pa mostrarlo-
+<li  class="aaa"><a href="menu.html" class="link">Principal</a></li>
+
+
+
+<li  class="aaa"><a href="Servicios.html" class="link">Servicios</a></li>
+
+<li  class="aaa"><a href="Productos.html" class="link">Productos</a></li>
+
+<li  class="aaa"><a href="Nosotros.html" class="link">Aserca de nosotros</a></li>
+
+-->
+
+<!--</ul>-->
+
+</div>
+
+
+
+
+
+
+
+
+
+</div><br>
+
+
+
+
+<!-- ata qui-->
+loll
+<div id="div_cont" style="border:solid 12px;">
+  
+  <div align="left" class="cont_img">
+    <p>
+	  <img src="img7.png" width="%100">
+    </p>
+    <br>      
+  </div>
+
+
+
+  <div id="cont_img" align="right">
+        <img id="cont_im" src="size.png">
+    <br><img id="img1" src="circulo.png" width="5%"  onClick="CC(0)" onMouseOver="CC(0)">
+        <img id="img2" src="circulo.png" width="5%" onClick="CC(1)" onMouseOver="CC(1)">
+        <img id="img3" src="circulo.png" width="5%" onClick="CC(2)" onMouseOver="CC(2)">
+  </div>
+ 
+ 
+       <div class="cont_txt" align="left">
+          <h2 id="cont_txt_tema" class="txt2">Tema</h2>
+          <div align="left" id="cont_txt_texto">
+		       .............
+		  </div>
+      </div>
+
+
+
+
+<div align="left"><br><br><br></div>
+<footer>
+<table align="center">
+ <tr >
+ 
+ <td class="td2"><h2>Siguenos en Facebook</h2> </td>
+ 
+  <td class="td2"><h2>Siguenos en Twitter<br></h2> </td>
+ 
+  <td class="td2" ><a href="Nosotros.html" style=" text-decoration:none; color:#FFF;"><h2>System Electronic Security</h2></a> </td>
+ 
+ </tr>
+ </table> 
+
+</footer>
+
+</div>
+
+<ul class="menu2">
+<li  class="aaa"><a href="menu.html" class="link">Principal</a></li>
+
+<li  class="aaa"><a href="Servicios.html" class="link">Servicios</a></li>
+
+<li  class="aaa"><a href="Productos.html" class="link">Productos</a></li>
+
+<li  class="aaa"><a href="Nosotros.html" class="link">Aserca de nosotros</a></li>
+
+<li  class="aaa"><a href="Contactanos.html" class="link">Contactanos</a></li>
+
+ <li style="float:left; list-style:none;"><br>Copyright © 2014 SES | Diseño y Programación Programador Reservado</li>
+</ul>
+
+</div>
+
+<script type="text/javascript">
+
+DD();
+setInterval(DD,3000); 
+</script>
+
+
+
+</div>
+
+<!-- Inserted by miarroba -->
+<script type="text/javascript" src="http://hosting.miarroba.info/?__muid=c7f66e41bb1cbcf05cf7d2c270f47023719efdfb&amp;h=1530338&amp;t=1408682660&amp;k=c6232b92fc77104c3d93a0a44a22b581"></script>
+<noscript><img alt="beacon" border="0" width="1" height="1" src="http://hosting.miarroba.info/?__muid=c7f66e41bb1cbcf05cf7d2c270f47023719efdfb&amp;h=1530338&amp;t=1408682660&amp;k=c6232b92fc77104c3d93a0a44a22b581&amp;img=1" /></noscript>
+<script type="text/javascript" src="http://contadores.miarroba.es/ver.php?id=324766"></script>
+<!-- Inserted by miarroba -->
+</body>
+</html>

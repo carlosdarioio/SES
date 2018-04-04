@@ -1,0 +1,165 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>SES</title>
+<link rel="StyleSheet" href="ses.css" type="text/css">
+
+
+<script type="text/javascript" src="zepto.min.js" > </script>
+<!-- Redireccionamiento Movil -->
+<script type="text/javascript">
+var device = navigator.userAgent
+
+if (device.match(/Iphone/i)|| device.match(/Ipod/i)|| device.match(/Android/i)|| device.match(/J2ME/i)|| device.match(/BlackBerry/i)|| device.match(/iPhone|iPad|iPod/i)|| device.match(/Opera Mini/i)|| device.match(/IEMobile/i)|| device.match(/Mobile/i)|| device.match(/Windows Phone/i)|| device.match(/windows mobile/i)|| device.match(/windows ce/i)|| device.match(/webOS/i)|| device.match(/palm/i)|| device.match(/bada/i)|| device.match(/series60/i)|| device.match(/nokia/i)|| device.match(/symbian/i)|| device.match(/HTC/i))
+{
+window.location = "movil/m.Contactanos.html";
+
+}
+else
+{
+
+}</script>
+<!-- fin Redireccionamiento-->
+
+
+</head>
+
+<body bgcolor="#DDE8F3">
+
+
+
+
+<div class="div_principal">
+
+<div class="div_principal_con"style="background-color:#DDE8F3; float:left;">
+
+<div align="left" class="cont_img">
+ <p><a  href="menu.html" ><img src="img.png" width="240"></a> </p>
+ 
+  
+      
+</div>
+<div class="cont_menu">
+<ul class="menu">
+<!-- Me gusta mas sin el menu de arriba solo dejalo en servicios pa mostrarlo-
+<li  class="aaa"><a href="menu.html" class="link">Principal</a></li>
+
+
+
+<li  class="aaa"><a href="Servicios.html" class="link">Servicios</a></li>
+
+<li  class="aaa"><a href="Productos.html" class="link">Productos</a></li>
+
+<li  class="aaa"><a href="Nosotros.html" class="link">Aserca de nosotros</a></li>
+
+-->
+</ul>
+
+</div>
+
+
+<div class="contt" align="left">
+
+<div id="div_cont" style="border:solid 12px;"></div>
+
+
+<div id="indice" align="left">
+<nav>
+         <h1 align="right">Menu </h1>
+        <ul>
+<a  href="menu.html" class="hr">Principal</a>
+<br><br><br><br>
+<a href="Servicios.html" class="hr">Servicios</a>
+<br><br><br><br>
+
+<a href="Productos.html" class="hr">Productos</a>
+<br><br><br><br>
+
+<a href="Nosotros.html" class="hr">Nosotros</a>
+<br><br><br><br>
+<a href="Contactanos.html" class="hr">Contactanos</a>
+
+ </ul>
+      </nav>
+ 
+    
+
+</div>
+
+
+<div id="inf" >
+<div ><img src="contactanos.png" width="532" align="right" style="margin-top:-200px; margin-right:190px;">
+<div align="center" style="margin-top:-338px; margin-right:-80px;">
+
+<p> Si deseas saber mas de nosotro puedes llamarnos al celular 95 91 25 13.</p>
+<p> o a nuestro telefono 2440 02 54.</p>
+
+<p>te danos una opcion mas mandanos un mensaje por este medio:  </p>
+
+      <form action="contactanos.html" method="post" class="registro">
+      <label id = "1">Nombre:</label>
+      <label><input type="text" name="nombre" />
+      </label>
+         <p>
+         <label id = "2">Asunto:</label><input type="text" value="Informacion" name="asunto" placeholder="Asunto"/>
+         </p>
+          <p>
+         <label id = "1">Correo:</label><input type="text" name="correo" placeholder="Correo"/>
+           </p>
+           <p>
+         <label id = "1">Cuerpo del correo :</label>
+          <label>  <textarea name="cuerpo" cols="28" rows="3" placeholder="Cuerpo del mensaje"> </textarea>  </label>
+          </p>
+      
+ <!-- Inicio php -->
+ 
+ 
+ < ?php
+/*INICIAMOS EL CODIGO PHP*/
+$header="From: Prueba<$_REQUEST[correo]>\n";
+/*CREAMOS UN HEADER DONDE DEFINIMOS EL REMITENTE DEL CORREO,
+ESTO LO ASIGNAMOS A LA VARIABLE $header*/
+$header.="MIME-Version: 1.0\n";
+$header.="Content-type: text/html; charset=iso-8859-1";
+/*CONTINUAMOS EL HEADER (NOTESE EL ".=" EN VEZ DE SOLO "="),
+DEFINIDIENDO AHORA, QUE EL CORREO SE ENVIARA EN FORMATO HTML.
+ESTO TAMBIEN LO ASIGNAMOS A LA VARIABLE $header*/
+$msj="$_REQUEST[cuerpo]";
+//$msj.="<br><a href='www.comolohago.cl'>Click</a>";
+/*CREAMOS EL MENSAJE (NOTESE NUEVAMENTE EL ".=") QUE IRA EN EL CORREO
+Y LO ASIGNAMOS A LA VARIABLE $msj*/
+$dest="cdfn3@hotmail.com";
+/*ASIGNAMOS A LA VARIABLE $dest EL CORREO AL QUE ENVIAREMOS EL CORREO
+LAS PRUEBAS DEBEN HACERSE CON UN CORREO REAL*/
+$asunto="$_REQUEST[asunto]";
+/* EN LA VARIABLE $asunto GUARDAMOS EL ASUNTO DEL MENSAJE*/
+mail($dest,$asunto,$msj,$header);
+/*EJECUTAMOS LA FUNCION COMO TAL, EL ORDEN ES IMPORTANTE ASI QUE SE DEBE MANTENER,
+USAMOS LAS VARIABLES QUE ASIGNAMOS ANTERIORMENTE*/
+echo "Mensake enviado";
+? >
+ 
+ <!-- fin php--> 
+ 
+   <input type="submit" name="enviar" value="Enviar"> 
+
+       </form>
+</div>
+
+</div>
+</div>
+
+
+
+</div>
+
+<footer align="center">
+      
+      <p><a href="menu.html">Principal</a> | <a href="Servicios.html">Servicios</a> | <a href="Productos.html">Productos</a> | <a href="Nosotros.html">Nosotros</a> | <a href="Contactanos.html">Contactanos</a></p>
+      <p>Copyright &copy; 2014 SES</p>
+    </footer>
+</div>
+</div>
+</body>
+</html>
